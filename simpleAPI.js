@@ -21,7 +21,7 @@ const userData = [
 ]
 
 http.createServer((req,resp) =>{
-    resp.setHeader("Content-Type","application-JSON");
+    resp.setHeader("Content-Type",'application-JSON');
     resp.write(JSON.stringify(userData));
 
     resp.end();
